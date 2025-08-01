@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Businesses with Data-Driven Decisions</title>
+    <style>
+        /* General Body Styles */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Header and Navigation Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #1a1a1a;
+            border-bottom: 1px solid #333;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #bb86fc;
+        }
+
+        .get-started-btn {
+            background-color: #bb86fc;
+            color: #121212;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .get-started-btn:hover {
+            background-color: #a765f1;
+        }
+
+        /* Hero Section Styles */
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 50px;
+            text-align: left;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(18, 18, 18, 0.8);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-weight: 300;
+        }
+
+        /* About Section Styles */
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 50px;
+            background-color: #1a1a1a;
+            gap: 50px;
+        }
+
+        .about-content {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .about-content .subtitle {
+            font-size: 1.2rem;
+            color: #bb86fc;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+        }
+        
+        .about-content ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .about-content ul li {
+            font-size: 1rem;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .about-content ul li::before {
+            content: '■';
+            color: #bb86fc;
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+
+        .about-image {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Services Section Styles */
+        .services-section {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .services-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+        
+        .services-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .service-card {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+
+        .service-card h3 {
+            font-size: 1.2rem;
+            color: #bb86fc;
+            margin-top: 0;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .nav-links {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .about-content {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Metriominds.com</div>
+        <nav class="nav-links">
+            <a href="#">Solutions</a>
+            <a href="#">Vision</a>
+            <a href="#">Programs</a>
+            <a href="#">Blog</a>
+        </nav>
+        <a href="#" class="get-started-btn">Get Started</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Empowering Businesses with Data-Driven Decisions</h1>
+                <p>Utilize the Power of Data to Drive Business Growth</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About</h2>
+                <p class="subtitle">My name is Sachin Bajpai</p>
+                <p>
+                    Hello! I'm Sachin Bajpai, a passionate Data Analyst with over 2 years of hands-on experience in transforming raw data into clear, actionable insights. My expertise lies in:
+                </p>
+                <ul>
+                    <li>Power BI - for building interactive dashboards, reports, and real-time analytics.</li>
+                    <li>DAX & Power Query - for data modeling and complex calculations.</li>
+                    <li>SQL - for extracting, cleaning, and analyzing data efficiently.</li>
+                    <li>Python (pandas, matplotlib) - for data analysis, visualization, and automation.</li>
+                </ul>
+                 <p>
+                    I love solving real-world business problems by combining technical tools with storytelling. Whether it's tracking KPIs, automating reports, or discovering trends, I'm driven by the goal of helping businesses make smarter decisions through data.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="Data analytics dashboard and charts on a desk">
+            </div>
+        </section>
+        
+        <!-- Services Section (Partially visible in the original image) -->
+        <section class="services-section">
+            <h2>Harnessing Data for...</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Cloud Analytics Expertise</h3>
+                    <p>Our team is proficient in accelerating analytics through advanced cloud-based solutions, ensuring seamless integration and enhanced operational efficiency.</p>
+                </div>
+                <!-- Add more service cards as needed -->
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
