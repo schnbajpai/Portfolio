@@ -25,21 +25,22 @@
       z-index: 1000;
     }
 
-    .nav-container {
+    .nav-wrapper {
+      max-width: 1200px;
+      margin: 0 auto; /* Centers the wrapper */
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: center; /* Centers nav items horizontally */
       gap: 30px;
     }
 
-    .nav-container a {
+    .nav-wrapper a {
       color: white;
       text-decoration: none;
       font-size: 16px;
       transition: color 0.3s ease;
     }
 
-    .nav-container a:hover {
+    .nav-wrapper a:hover {
       color: #ffcc00;
     }
 
@@ -58,7 +59,7 @@
 
   <!-- Navigation Bar -->
   <nav>
-    <div class="nav-container">
+    <div class="nav-wrapper">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
