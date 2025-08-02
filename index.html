@@ -18,29 +18,30 @@
 
     nav {
       background-color: #333;
-      padding: 10px;
+      padding: 10px 0;
       position: fixed;
       top: 0;
       width: 100%;
       z-index: 1000;
+      display: flex;
+      justify-content: center; /* Centering nav links */
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-right: 20px;
+      margin: 0 15px;
     }
 
     section {
-      padding: 40px 20px; /* Reduced padding */
-      min-height: 100vh;
+      padding: 60px 20px 40px; /* Top padding accounts for fixed navbar */
       box-sizing: border-box;
     }
 
     h2 {
       margin-top: 0;
       text-align: center;
-      margin-bottom: 25px; /* Slightly reduced space below headings */
+      margin-bottom: 25px;
     }
 
     /* --- Project Tiles Styles --- */
@@ -109,6 +110,11 @@
 
     #contact a:hover i {
       color: #0077b5;
+    }
+
+    /* Prevent sections from being overly tall */
+    section:not(#projects) {
+      min-height: auto;
     }
   </style>
 </head>
